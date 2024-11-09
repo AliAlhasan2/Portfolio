@@ -1,0 +1,214 @@
+body{
+    font-family: 'Arial',sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+}
+/* Header-Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center; /* Zentriert den Text im Header */
+}
+.main-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .intro-section{
+        flex-direction: column;
+        text-align: center;
+    }
+    #about p{
+        text-align: left;
+    }
+    .profibild{
+        margin-bottom: 15px;
+    }
+    .skills-list li {
+        font-size: 1em;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Kleinere Schriftgröße */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Navigation in eine Spalte anordnen */
+        gap: 10px;
+    }
+    #about p{
+        text-align: left;
+    }
+
+    .project {
+        padding: 10px; /* Weniger Abstand in den Projektboxen */
+    }
+
+    .skills-list li::before {
+        font-size: 1em; /* Kleinere Symbole */
+    }
+}
+h1{
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Zentriert die Navigationsleiste */
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #1A1A19;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background: #859F3D;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #859F3D;
+}
+section h2 {
+    color: #333;
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+.profibild{
+    display: flex;
+    margin: 20px auto;
+    width: 150px; /* Passe die Größe nach Bedarf an */
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Überschrift Styling */
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Abschnitts-Text Styling */
+section p {
+
+    display: inline-block;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+.intro-section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.intro-text{
+    flex:1;
+}
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: #e9e9e9;
+    border-radius: 10px;
+}
+
+/* Styling für Projektboxen */
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.project:hover{
+    transform: translate(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.animation-h2{
+    position: relative;
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 150px;
+    display: block;
+    margin: auto;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #575757;
+}
+.liste-style{
+    list-style-type: none;
+    display: inline-block;
+
+    padding: 0;
+
+}
+.liste-style li{
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    text-align: left;
+
+}
+#about p{
+    max-width: 550px;
+    color: #444
+}
